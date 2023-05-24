@@ -19,6 +19,11 @@ fig1= px.bar(
 dfa, y= values,  x=names,
 title= 'Jumlah Prestasi Berdasarkan Fakultas')
 print(dfa)
+fig1.update_layout(
+            dragmode="pan",
+            hovermode="x",
+            autosize=True
+        )
 
 dfb= pd.read_excel(
     io='PrestasiEkse.xlsx',
@@ -44,6 +49,11 @@ values = dfc['Count'].apply(int)
 fig3= px.bar(dfc, y= values, x=names,
 title= 'Berdasarkan Jenis Prestasi')
 print(dfc)
+fig3.update_layout(
+            dragmode="pan",
+            hovermode="x",
+            autosize=True
+        )
 
 dfd= pd.read_excel(
     io='PrestasiEkse.xlsx',
@@ -57,6 +67,11 @@ fig4= px.line(dfd, y= values,
 x= names, 
 title= 'Jumlah Prestasi Berdasarkan Bulan')
 print(dfd)
+fig4.update_layout(
+            dragmode="pan",
+            hovermode="x",
+            autosize=True
+        )
 
 dfe= pd.read_excel(
     io='PrestasiEkse.xlsx',
@@ -69,6 +84,11 @@ values = dfe['Count'].apply(int)
 fig5= px.bar(dfe, x= values, y=names,
 title= 'Jumlah Prestasi Berdasarkan Skala Lomba')
 print(dfe)
+fig5.update_layout(
+            dragmode="pan",
+            hovermode="x",
+            autosize=True
+        )
 
 dff= pd.read_excel(
     io='PrestasiEkse.xlsx',
