@@ -87,7 +87,7 @@ print(dff)
 st.title('Advocare Introduction')
 
 st.write("Advocare menyelesaikan setiap masalah dengan cepat dan tepat. Kami fokus pada kepuasan dan kesejahteraan Anda, dan menawarkan layanan profesional dan responsif. Kami terlatih menangani segala jenis keluhan dan berkomitmen memberikan solusi memuaskan. Dengan Advocare, Anda tenang dan terjamin masalah Anda ditangani dengan keahlian yang sesuai.")
-# Tampilkan deskripsi staff
+#=============================== Skala Lomba ===========================================
 st.markdown('-------------')   
 col1, col2, col3, col4 = st.columns(4)
 with col1:
@@ -100,6 +100,10 @@ with col4:
     st.metric("Regional", 5)
 st.markdown('-------------')
 
+#=============================== Bulan ===========================================
+st.plotly_chart(fig4)
+st.markdown('-------------')
+
 #=============================== Jenis Perlombaan ===========================================
 #=============================== Jenis Kelamin ===========================================
 left_column, Right_Column = st.columns([4,4])
@@ -107,27 +111,22 @@ left_column.plotly_chart(fig6, use_container_width=True)
 Right_Column.plotly_chart(fig2,use_container_width=True)
 st.markdown('-------------')
 
-col1, col2, col3= st.columns([2,1,2])
-with col1:
-    st.plotly_chart(fig6)
-with col2:
-    st.markdown("----")
-with col3:
-    st.plotly_chart(fig2)
-st.markdown('-------------')
 #=============================== Fakultas ===========================================
-st.plotly_chart(fig1)
-st.markdown('-------------')
-
-
-
 #=============================== Jenis Prestasi ===========================================
-st.plotly_chart(fig3)
-st.markdown('-------------')
 
-#=============================== Bulan ===========================================
-st.plotly_chart(fig4)
-st.markdown('-------------')
+left_column, Right_Column = st.columns([4,4])
+left_column.plotly_chart(fig1, use_container_width=True)
+Right_Column.plotly_chart(fig3,use_container_width=True)
+
+# st.markdown('-------------')
+# st.plotly_chart(fig1)
+# st.markdown('-------------')
+
+
+# st.plotly_chart(fig3)
+# st.markdown('-------------')
+
+
 
 #=============================== Skala Lomba ===========================================
 # st.plotly_chart(fig5)
