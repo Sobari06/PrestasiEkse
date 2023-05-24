@@ -82,6 +82,13 @@ title= 'Berdasarkan Jenis Perlombaan')
 print(dff)
 
 #Visualisasi Grafik Prestasi Eksekutif Ormawa
+
+#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
+st.title('Advocare Introduction')
+
+st.write("Advocare menyelesaikan setiap masalah dengan cepat dan tepat. Kami fokus pada kepuasan dan kesejahteraan Anda, dan menawarkan layanan profesional dan responsif. Kami terlatih menangani segala jenis keluhan dan berkomitmen memberikan solusi memuaskan. Dengan Advocare, Anda tenang dan terjamin masalah Anda ditangani dengan keahlian yang sesuai.")
+             # Tampilkan deskripsi staff
+st.markdown('-------------')   
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.metric("Jumlah Prestasi", 27)
@@ -91,11 +98,29 @@ with col3:
     st.metric("Nasional", 20)
 with col4:
     st.metric("Regional", 5)
+st.markdown('-------------')
 
 
+#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
 st.plotly_chart(fig1)
+st.markdown('-------------')
+
+#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
 st.plotly_chart(fig2)
+st.markdown('-------------')
+
+#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
 st.plotly_chart(fig3)
+st.markdown('-------------')
+
+#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
 st.plotly_chart(fig4)
+st.markdown('-------------')
+
+#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
 st.plotly_chart(fig5)
+st.markdown('-------------')
+
+#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
 st.plotly_chart(fig6)
+st.markdown('-------------')
