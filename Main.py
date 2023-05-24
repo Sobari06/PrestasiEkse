@@ -103,10 +103,12 @@ st.markdown('-------------')
 #=============================== Jenis Perlombaan ===========================================
 #=============================== Jenis Kelamin ===========================================
 
-col1, col2 = st.columns([1,1])
+col1, col2, col3= st.columns([2,1,2])
 with col1:
     st.plotly_chart(fig6)
 with col2:
+    st.markdown("----")
+with col3:
     st.plotly_chart(fig2)
 st.markdown('-------------')
 #=============================== Fakultas ===========================================
