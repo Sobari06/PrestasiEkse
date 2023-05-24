@@ -80,7 +80,7 @@ values = dff['Count'].apply(int)
 
 fig6= px.pie(dff, values= values, 
 names= names, 
-title= 'Jumlah Prestasi Berdasarkan Jenis Perlombaan')
+title= 'Berdasarkan Jenis Perlombaan')
 print(dff)
 
 dfg= pd.read_excel(
