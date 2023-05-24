@@ -13,8 +13,8 @@ dfa= pd.read_excel(
 names = dfa['Fakultas'].apply(str)
 values = dfa['Count'].apply(int)
 
-fig1= px.bar(dfa, values= values, 
-names= names, 
+fig1= px.histogram(
+dfa, x= values,  
 title= 'Berdasarkan Fakultas')
 print(dfa)
 
@@ -52,8 +52,8 @@ dfd= pd.read_excel(
 names = dfd['Bulan'].apply(str)
 values = dfd['Count'].apply(int)
 
-fig4= px.line(dfd, values= values, 
-names= names, 
+fig4= px.line(dfd, y= values, 
+x= names, 
 title= 'Berdasarkan Bulan')
 print(dfd)
 
