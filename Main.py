@@ -82,7 +82,17 @@ title= 'Berdasarkan Jenis Perlombaan')
 print(dff)
 
 #Visualisasi Grafik Prestasi Eksekutif Ormawa
-st.metric("Jumlah Prestasi", 27)
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    st.metric("Jumlah Prestasi", 27)
+with col2:
+    st.metric("Internasional", 2)
+with col3:
+    st.metric("Nasional", 20)
+with col4:
+    st.metric("Regional", 5)
+
+
 st.plotly_chart(fig1)
 st.plotly_chart(fig2)
 st.plotly_chart(fig3)
