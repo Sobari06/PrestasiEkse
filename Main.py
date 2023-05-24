@@ -39,7 +39,7 @@ dfc= pd.read_excel(
 names = dfc['JenisPrestasi'].apply(str)
 values = dfc['Count'].apply(int)
 
-fig3= px.histogram(dfc, x= values, 
+fig3= px.bar(dfc, x= values, y=names,
 title= 'Berdasarkan Jenis Prestasi')
 print(dfc)
 
@@ -64,7 +64,7 @@ dfe= pd.read_excel(
 names = dfe['SkalaLomba'].apply(str)
 values = dfe['Count'].apply(int)
 
-fig5= px.histogram(dfe, x= values, 
+fig5= px.bar(dfe, x= values, y=names,
 title= 'Berdasarkan Skala Lomba')
 print(dfe)
 
