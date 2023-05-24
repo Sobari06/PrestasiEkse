@@ -87,7 +87,7 @@ print(dff)
 st.title('Advocare Introduction')
 
 st.write("Advocare menyelesaikan setiap masalah dengan cepat dan tepat. Kami fokus pada kepuasan dan kesejahteraan Anda, dan menawarkan layanan profesional dan responsif. Kami terlatih menangani segala jenis keluhan dan berkomitmen memberikan solusi memuaskan. Dengan Advocare, Anda tenang dan terjamin masalah Anda ditangani dengan keahlian yang sesuai.")
-             # Tampilkan deskripsi staff
+# Tampilkan deskripsi staff
 st.markdown('-------------')   
 col1, col2, col3, col4 = st.columns(4)
 with col1:
@@ -100,27 +100,30 @@ with col4:
     st.metric("Regional", 5)
 st.markdown('-------------')
 
+#=============================== Jenis Perlombaan ===========================================
+#=============================== Jenis Kelamin ===========================================
 
-#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
+col1, col2 = st.columns(2)
+with col1:
+    st.plotly_chart(fig6)
+with col2:
+    st.plotly_chart(fig2)
+st.markdown('-------------')
+#=============================== Fakultas ===========================================
 st.plotly_chart(fig1)
 st.markdown('-------------')
 
-#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
-st.plotly_chart(fig2)
-st.markdown('-------------')
 
-#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
+
+#=============================== Jenis Prestasi ===========================================
 st.plotly_chart(fig3)
 st.markdown('-------------')
 
-#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
+#=============================== Bulan ===========================================
 st.plotly_chart(fig4)
 st.markdown('-------------')
 
-#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
-st.plotly_chart(fig5)
-st.markdown('-------------')
+#=============================== Skala Lomba ===========================================
+# st.plotly_chart(fig5)
+# st.markdown('-------------')
 
-#=============================== BEST PERFORMANCE BPH SEBAGAI SC ===========================================
-st.plotly_chart(fig6)
-st.markdown('-------------')
