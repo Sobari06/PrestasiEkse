@@ -13,8 +13,8 @@ dfa= pd.read_excel(
 names = dfa['Fakultas'].apply(str)
 values = dfa['Count'].apply(int)
 
-fig1= px.histogram(
-dfa, x= values,  
+fig1= px.bar(
+dfa, x= values,  y=names,
 title= 'Berdasarkan Fakultas')
 print(dfa)
 
