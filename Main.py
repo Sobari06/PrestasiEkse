@@ -30,7 +30,7 @@ values = dfb['Count'].apply(int)
 
 fig2= px.pie(dfb, values= values, 
 names= names, 
-title= 'Berdasarkan Jenis Kelamin')
+title= 'Based on Jenis Kelamin')
 print(dfb)
 
 dfc= pd.read_excel(
@@ -42,7 +42,7 @@ names = dfc['JenisPrestasi'].apply(str)
 values = dfc['Count'].apply(int)
 
 fig3= px.bar(dfc, y= values, x=names,
-title= 'Berdasarkan Jenis Prestasi')
+title= 'Based on Jenis Prestasi')
 print(dfc)
 
 dfd= pd.read_excel(
@@ -80,7 +80,7 @@ values = dff['Count'].apply(int)
 
 fig6= px.pie(dff, values= values, 
 names= names, 
-title= 'Berdasarkan Jenis Perlombaan')
+title= 'Based on Jenis Perlombaan')
 print(dff)
 
 dfg= pd.read_excel(
@@ -169,4 +169,5 @@ Right_Column.plotly_chart(fig3,use_container_width=True)
 #=============================== Skala Lomba ===========================================
 # st.plotly_chart(fig5)
 # st.markdown('-------------')
+
 
