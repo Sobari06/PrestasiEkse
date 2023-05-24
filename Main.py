@@ -102,12 +102,16 @@ st.markdown('-------------')
 
 #=============================== Jenis Perlombaan ===========================================
 #=============================== Jenis Kelamin ===========================================
+left_column, Right_Column = st.columns([4,4])
+left_column.plotly_chart(fig6, use_container_width=True)
+Right_Column.plotly_chart(fig2,use_container_width=True)
+st.markdown('-------------')
 
-col1, col2, col3= st.columns([2,2,2])
+col1, col2, col3= st.columns([2,1,2])
 with col1:
     st.plotly_chart(fig6)
 with col2:
-    st.plotly_chart(fig6)
+    st.markdown("----")
 with col3:
     st.plotly_chart(fig2)
 st.markdown('-------------')
