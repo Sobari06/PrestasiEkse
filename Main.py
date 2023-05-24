@@ -30,7 +30,7 @@ values = dfb['Count'].apply(int)
 
 fig2= px.pie(dfb, values= values, 
 names= names, 
-title= 'Based on Jenis Kelamin')
+title= 'Berdasarkan Jenis Kelamin')
 print(dfb)
 
 dfc= pd.read_excel(
@@ -42,7 +42,7 @@ names = dfc['JenisPrestasi'].apply(str)
 values = dfc['Count'].apply(int)
 
 fig3= px.bar(dfc, y= values, x=names,
-title= 'Based on Jenis Prestasi')
+title= 'Berdasarkan Jenis Prestasi')
 print(dfc)
 
 dfd= pd.read_excel(
@@ -80,7 +80,7 @@ values = dff['Count'].apply(int)
 
 fig6= px.pie(dff, values= values, 
 names= names, 
-title= 'Based on Jenis Perlombaan')
+title= 'Berdasarkan Jenis Perlombaan')
 print(dff)
 
 dfg= pd.read_excel(
@@ -93,7 +93,7 @@ values = dfg['Count'].apply(int)
 
 fig7= px.pie(dfg, values= values, 
 names= names, 
-title= 'Based on Kategori Prestasi')
+title= 'Berdasarkan Kategori Prestasi')
 print(dfg)
 
 #Visualisasi Grafik Prestasi Eksekutif Ormawa
@@ -105,7 +105,8 @@ def load_lottie_url(url: str):
     return r.json()
 
 # Mendefinisikan URL animasi Lottie yang akan ditampilkan
-url = "https://assets5.lottiefiles.com/packages/lf20_m2aybuxx.json"
+url = "https://assets8.lottiefiles.com/packages/lf20_4wledibb.json"
+
 
 # Menampilkan animasi Lottie di tampilan utama Streamlit
 st_lottie(load_lottie_url(url))
