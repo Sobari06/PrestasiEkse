@@ -105,7 +105,7 @@ def load_lottie_url(url: str):
     return r.json()
 
 # Mendefinisikan URL animasi Lottie yang akan ditampilkan
-url = "https://assets8.lottiefiles.com/packages/lf20_4wledibb.json"
+url = "https://assets8.lottiefiles.com/packages/lf20_apg1cx0v.json"
 
 
 # Menampilkan animasi Lottie di tampilan utama Streamlit
