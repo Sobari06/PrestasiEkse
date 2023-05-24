@@ -14,7 +14,7 @@ names = dfa['Fakultas'].apply(str)
 values = dfa['Count'].apply(int)
 
 fig1= px.bar(
-dfa, x= values,  y=names,
+dfa, y= values,  x=names,
 title= 'Berdasarkan Fakultas')
 print(dfa)
 
@@ -39,7 +39,7 @@ dfc= pd.read_excel(
 names = dfc['JenisPrestasi'].apply(str)
 values = dfc['Count'].apply(int)
 
-fig3= px.bar(dfc, x= values, y=names,
+fig3= px.bar(dfc, y= values, x=names,
 title= 'Berdasarkan Jenis Prestasi')
 print(dfc)
 
