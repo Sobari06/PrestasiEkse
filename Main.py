@@ -93,7 +93,7 @@ values = dfg['Count'].apply(int)
 
 fig7= px.pie(dfg, values= values, 
 names= names, 
-title= 'Berdasarkan Kategori Prestasi')
+title= 'Based on Kategori Prestasi')
 print(dfg)
 
 #Visualisasi Grafik Prestasi Eksekutif Ormawa
@@ -169,5 +169,4 @@ Right_Column.plotly_chart(fig3,use_container_width=True)
 #=============================== Skala Lomba ===========================================
 # st.plotly_chart(fig5)
 # st.markdown('-------------')
-
 
