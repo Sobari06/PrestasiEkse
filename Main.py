@@ -30,7 +30,7 @@ values = dfb['Count'].apply(int)
 
 fig2= px.pie(dfb, values= values, 
 names= names, 
-title= 'Jumlah Prestasi Berdasarkan Jenis Kelamin')
+title= 'Berdasarkan Jenis Kelamin')
 print(dfb)
 
 dfc= pd.read_excel(
@@ -42,7 +42,7 @@ names = dfc['JenisPrestasi'].apply(str)
 values = dfc['Count'].apply(int)
 
 fig3= px.bar(dfc, y= values, x=names,
-title= 'Jumlah Prestasi Berdasarkan Jenis Prestasi')
+title= 'Berdasarkan Jenis Prestasi')
 print(dfc)
 
 dfd= pd.read_excel(
@@ -93,7 +93,7 @@ values = dfg['Count'].apply(int)
 
 fig7= px.pie(dfg, values= values, 
 names= names, 
-title= 'Jumlah Prestasi Berdasarkan Kategori Prestasi')
+title= 'Berdasarkan Kategori Prestasi')
 print(dfg)
 
 #Visualisasi Grafik Prestasi Eksekutif Ormawa
@@ -119,7 +119,7 @@ with col2:
              st.image('RISBANG X INTERNAL.png', width=300)
 
 st.markdown('-------------') 
-st.write("Advocare menyelesaikan setiap masalah dengan cepat dan tepat. Kami fokus pada kepuasan dan kesejahteraan Anda, dan menawarkan layanan profesional dan responsif. Kami terlatih menangani segala jenis keluhan dan berkomitmen memberikan solusi memuaskan. Dengan Advocare, Anda tenang dan terjamin masalah Anda ditangani dengan keahlian yang sesuai.")
+st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan non-akademik mahasiswa PKU IPB, serta mengapresiasi prestasi yang telah mereka raih. Dengan adanya dashboard ini, diharapkan dapat meningkatkan semangat mahasiswa dalam berprestasi serta memberikan informasi yang berguna bagi pengambilan keputusan terkait pengembangan diri dan karier di masa depan.")
 #=============================== Skala Lomba ===========================================
 st.markdown('-------------')   
 st.subheader('Metriks Prestasi Mahasiswa PKU IPB Angkatan 59')
