@@ -28,7 +28,7 @@ values = dfb['Count'].apply(int)
 
 fig2= px.pie(dfb, values= values, 
 names= names, 
-title= 'Berdasarkan Jenis Kelamin')
+title= 'Jumlah Prestasi Berdasarkan Jenis Kelamin')
 print(dfb)
 
 dfc= pd.read_excel(
@@ -40,7 +40,7 @@ names = dfc['JenisPrestasi'].apply(str)
 values = dfc['Count'].apply(int)
 
 fig3= px.bar(dfc, y= values, x=names,
-title= 'Berdasarkan Jenis Prestasi')
+title= 'Jumlah Prestasi Berdasarkan Jenis Prestasi')
 print(dfc)
 
 dfd= pd.read_excel(
@@ -53,7 +53,7 @@ values = dfd['Count'].apply(int)
 
 fig4= px.line(dfd, y= values, 
 x= names, 
-title= 'Berdasarkan Bulan')
+title= 'Jumlah Prestasi Berdasarkan Bulan')
 print(dfd)
 
 dfe= pd.read_excel(
@@ -65,7 +65,7 @@ names = dfe['SkalaLomba'].apply(str)
 values = dfe['Count'].apply(int)
 
 fig5= px.bar(dfe, x= values, y=names,
-title= 'Berdasarkan Skala Lomba')
+title= 'Jumlah Prestasi Berdasarkan Skala Lomba')
 print(dfe)
 
 dff= pd.read_excel(
@@ -78,7 +78,7 @@ values = dff['Count'].apply(int)
 
 fig6= px.pie(dff, values= values, 
 names= names, 
-title= 'Berdasarkan Jenis Perlombaan')
+title= 'Jumlah Prestasi Berdasarkan Jenis Perlombaan')
 print(dff)
 
 #Visualisasi Grafik Prestasi Eksekutif Ormawa
