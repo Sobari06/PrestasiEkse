@@ -13,9 +13,9 @@ dfa= pd.read_excel(
 names = dfa['Fakultas'].apply(str)
 values = dfa['Count'].apply(int)
 
-fig1= px.pie(dfa, values= values, 
+fig1= px.bar(dfa, values= values, 
 names= names, 
-title= 'Based on Faculty')
+title= 'Berdasarkan Fakultas')
 print(dfa)
 
 dfb= pd.read_excel(
@@ -28,7 +28,7 @@ values = dfb['Count'].apply(int)
 
 fig2= px.pie(dfb, values= values, 
 names= names, 
-title= 'Based on Jenis Kelamin')
+title= 'Berdasarkan Jenis Kelamin')
 print(dfb)
 
 dfc= pd.read_excel(
@@ -39,9 +39,9 @@ dfc= pd.read_excel(
 names = dfc['JenisPrestasi'].apply(str)
 values = dfc['Count'].apply(int)
 
-fig3= px.pie(dfc, values= values, 
+fig3= px.bar(dfc, values= values, 
 names= names, 
-title= 'Based on Jenis Prestasi')
+title= 'Berdasarkan Jenis Prestasi')
 print(dfc)
 
 dfd= pd.read_excel(
@@ -52,9 +52,9 @@ dfd= pd.read_excel(
 names = dfd['Bulan'].apply(str)
 values = dfd['Count'].apply(int)
 
-fig4= px.pie(dfd, values= values, 
+fig4= px.line(dfd, values= values, 
 names= names, 
-title= 'Based on Bulan')
+title= 'Berdasarkan Bulan')
 print(dfd)
 
 dfe= pd.read_excel(
@@ -65,9 +65,9 @@ dfe= pd.read_excel(
 names = dfe['SkalaLomba'].apply(str)
 values = dfe['Count'].apply(int)
 
-fig5= px.pie(dfe, values= values, 
+fig5= px.bar(dfe, values= values, 
 names= names, 
-title= 'Based on Bulan')
+title= 'Berdasarkan Skala Lomba')
 print(dfe)
 
 dff= pd.read_excel(
@@ -80,7 +80,7 @@ values = dff['Count'].apply(int)
 
 fig6= px.pie(dff, values= values, 
 names= names, 
-title= 'Based on Bulan')
+title= 'Berdasarkan Jenis Perlombaan')
 print(dff)
 
 #Visualisasi Grafik Prestasi Eksekutif Ormawa
