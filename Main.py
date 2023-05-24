@@ -15,7 +15,7 @@ values = dfa['Count'].apply(int)
 
 fig1= px.bar(
 dfa, y= values,  x=names,
-title= 'Berdasarkan Fakultas')
+title= 'Jumlah Prestasi Berdasarkan Fakultas')
 print(dfa)
 
 dfb= pd.read_excel(
@@ -89,6 +89,7 @@ st.title('Advocare Introduction')
 st.write("Advocare menyelesaikan setiap masalah dengan cepat dan tepat. Kami fokus pada kepuasan dan kesejahteraan Anda, dan menawarkan layanan profesional dan responsif. Kami terlatih menangani segala jenis keluhan dan berkomitmen memberikan solusi memuaskan. Dengan Advocare, Anda tenang dan terjamin masalah Anda ditangani dengan keahlian yang sesuai.")
 #=============================== Skala Lomba ===========================================
 st.markdown('-------------')   
+st.subheader('Metriks Prestasi Mahasiswa PKU IPB Angkatan 59')
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.metric("Jumlah Prestasi", 27)
@@ -101,11 +102,13 @@ with col4:
 st.markdown('-------------')
 
 #=============================== Bulan ===========================================
+st.subheader('Line Chart Prestasi Mahasiswa PKU IPB Angkatan 59')
 st.plotly_chart(fig4)
 st.markdown('-------------')
 
 #=============================== Jenis Perlombaan ===========================================
 #=============================== Jenis Kelamin ===========================================
+st.subheader('Pie Chart Prestasi Mahasiswa PKU IPB Angkatan 59')
 left_column, Right_Column = st.columns([4,4])
 left_column.plotly_chart(fig6, use_container_width=True)
 Right_Column.plotly_chart(fig2,use_container_width=True)
@@ -113,6 +116,7 @@ st.markdown('-------------')
 
 #=============================== Fakultas ===========================================
 #=============================== Jenis Prestasi ===========================================
+st.subheader('Bar Chart Prestasi Mahasiswa PKU IPB Angkatan 59')
 
 left_column, Right_Column = st.columns([4,4])
 left_column.plotly_chart(fig1, use_container_width=True)
