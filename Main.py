@@ -163,7 +163,7 @@ st.markdown('-------------')
 #=============================== Jenis Perlombaan ===========================================
 #=============================== Jenis Kelamin ===========================================
 st.subheader('Pie Chart Prestasi Mahasiswa PKU IPB Angkatan 59')
-st.text('Berikut adalah tiga pie chart terkait jumlah prestasi mahasiswa berdasarkan jenis perlombaan, kategori prestasi, dan jenis kelamin.')
+st.write('Berikut adalah tiga pie chart terkait jumlah prestasi mahasiswa berdasarkan jenis perlombaan, kategori prestasi, dan jenis kelamin.')
 left_column,middle_column, Right_Column = st.columns([4,4,4])
 left_column.plotly_chart(fig6, use_container_width=True)
 middle_column.plotly_chart(fig7,use_container_width=True)
@@ -173,7 +173,7 @@ st.markdown('-------------')
 #=============================== Fakultas ===========================================
 #=============================== Jenis Prestasi ===========================================
 st.subheader('Bar Chart Prestasi Mahasiswa PKU IPB Angkatan 59')
-st.text('Berikut adalah dua bar chart terkait jumlah prestasi mahasiswa berdasarkan fakultas, dan jenis prestasi.')
+st.write('Berikut adalah dua bar chart terkait jumlah prestasi mahasiswa berdasarkan fakultas, dan jenis prestasi.')
 
 left_column, Right_Column = st.columns([4,4])
 left_column.plotly_chart(fig1, use_container_width=True)
