@@ -17,7 +17,7 @@ values = dfa['Count'].apply(int)
 
 fig1= px.bar(
 dfa, y= values,  x=names,
-title= 'Jumlah Prestasi Berdasarkan Fakultas')
+title= 'Fakultas')
 print(dfa)
 fig1.update_layout(
             dragmode="pan",
@@ -35,7 +35,7 @@ values = dfb['Count'].apply(int)
 
 fig2= px.pie(dfb, values= values, 
 names= names, 
-title= 'Berdasarkan Jenis Kelamin')
+title= 'Jenis Kelamin')
 print(dfb)
 
 dfc= pd.read_excel(
@@ -47,7 +47,7 @@ names = dfc['JenisPrestasi'].apply(str)
 values = dfc['Count'].apply(int)
 
 fig3= px.bar(dfc, y= values, x=names,
-title= 'Berdasarkan Jenis Prestasi')
+title= 'Jenis Prestasi')
 print(dfc)
 fig3.update_layout(
             dragmode="pan",
@@ -100,7 +100,7 @@ values = dff['Count'].apply(int)
 
 fig6= px.pie(dff, values= values, 
 names= names, 
-title= 'Berdasarkan Jenis Perlombaan')
+title= 'Jenis Perlombaan')
 print(dff)
 
 dfg= pd.read_excel(
@@ -113,7 +113,7 @@ values = dfg['Count'].apply(int)
 
 fig7= px.pie(dfg, values= values, 
 names= names, 
-title= 'Berdasarkan Kategori Prestasi')
+title= 'Kategori Prestasi')
 print(dfg)
 
 #Visualisasi Grafik Prestasi Eksekutif Ormawa
@@ -137,10 +137,10 @@ with col1:
             st.subheader("Ormawa Eksekutif PKU IPB Kabinet Gantari Arti")   
 with col2:
         # Tampilkan informasi nilai mutu
-             st.image('RISBANG X AKPRES.png', width=300)
+             st.image('RISBANG X INTERNAL.png', width=300)
 
 st.markdown('-------------') 
-st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan non-akademik mahasiswa PKU IPB, serta mengapresiasi prestasi yang telah mereka raih. Dengan adanya dashboard ini, diharapkan dapat meningkatkan semangat mahasiswa dalam berprestasi serta memberikan informasi yang berguna bagi pengambilan keputusan terkait pengembangan diri dan karier di masa depan.")
+st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan non-akademik mahasiswa PKU IPB, serta mengapresiasi prestasi yang telah mereka raih. Dengan adanya dashboard ini, diharapkan dapat memberikan informasi terkait perkembangan prestasi mahasiswa secara real-time, sehingga dapat memberikan motivasi dan inspirasi dalam mengejar prestasi lebih baik.")
 #=============================== Skala Lomba ===========================================
 st.markdown('-------------')   
 st.subheader('Metriks Prestasi Mahasiswa PKU IPB Angkatan 59')
@@ -163,6 +163,7 @@ st.markdown('-------------')
 #=============================== Jenis Perlombaan ===========================================
 #=============================== Jenis Kelamin ===========================================
 st.subheader('Pie Chart Prestasi Mahasiswa PKU IPB Angkatan 59')
+st.text('Berikut adalah tiga pie chart terkait jumlah prestasi mahasiswa berdasarkan jenis perlombaan, kategori prestasi, dan jenis kelamin.')
 left_column,middle_column, Right_Column = st.columns([4,4,4])
 left_column.plotly_chart(fig6, use_container_width=True)
 middle_column.plotly_chart(fig7,use_container_width=True)
@@ -172,6 +173,7 @@ st.markdown('-------------')
 #=============================== Fakultas ===========================================
 #=============================== Jenis Prestasi ===========================================
 st.subheader('Bar Chart Prestasi Mahasiswa PKU IPB Angkatan 59')
+st.text('Berikut adalah dua bar chart terkait jumlah prestasi mahasiswa berdasarkan fakultas, dan jenis prestasi.')
 
 left_column, Right_Column = st.columns([4,4])
 left_column.plotly_chart(fig1, use_container_width=True)
