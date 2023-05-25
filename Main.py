@@ -6,6 +6,18 @@ from PIL import Image
 from streamlit_lottie import st_lottie
 import requests
 
+# Mengatur konfigurasi tampilan Streamlit
+def set_page_config():
+        st.set_page_config(
+            page_title="Dashboard Prestasi Mahasiswa PKU IPB 59",
+            page_icon='LOGO EKSE1.png',
+            layout="wide",
+            initial_sidebar_state="expanded",
+        )
+
+# Memanggil fungsi set_page_config()
+set_page_config()
+
 
 dfa= pd.read_excel(
     io='PrestasiEkse.xlsx',
@@ -144,7 +156,7 @@ st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk m
 #=============================== Skala Lomba ===========================================
 st.markdown('-------------')   
 st.subheader('Metriks Prestasi Mahasiswa PKU IPB Angkatan 59')
-st.write('Berikut adalah metriks terkait total prestasi yang diperoleh dan jumlah prestasi skala lomba.')
+st.write('Berikut adalah metriks terkait total prestasi yang diperoleh dan jumlah prestasi berdasarkan skala lomba.')
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
