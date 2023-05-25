@@ -144,6 +144,8 @@ st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk m
 #=============================== Skala Lomba ===========================================
 st.markdown('-------------')   
 st.subheader('Metriks Prestasi Mahasiswa PKU IPB Angkatan 59')
+st.write('Berikut adalah metriks terkait total prestasi yang diperoleh dan jumlah prestasi skala lomba.')
+
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.metric("Jumlah Prestasi", 27)
