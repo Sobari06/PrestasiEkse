@@ -9,7 +9,7 @@ import requests
 # Mengatur konfigurasi tampilan Streamlit
 def set_page_config():
         st.set_page_config(
-            page_title="Dashboard Prestasi Mahasiswa PKU IPB 59",
+            page_title="Gantari Arti",
             page_icon='LOGO EKSE1.png',
             layout="wide",
             initial_sidebar_state="expanded",
