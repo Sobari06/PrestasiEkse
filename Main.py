@@ -9,7 +9,7 @@ import requests
 # Mengatur konfigurasi tampilan Streamlit
 def set_page_config():
         st.set_page_config(
-            page_title="Gantari Arti",
+            page_title="Gantari Prestasi",
             page_icon='LOGO EKSE1.png',
             layout="wide",
             initial_sidebar_state="expanded",
@@ -123,6 +123,14 @@ dfg= pd.read_excel(
 names = dfg['KategoriPrestasi'].apply(str)
 values = dfg['Count'].apply(int)
 
+dfh= pd.read_excel(
+    io='PrestasiEkse.xlsx',
+    engine='openpyxl',
+    sheet_name='Table',
+    usecols='A:M')
+
+print(dfh)
+
 fig7= px.pie(dfg, values= values, 
 names= names, 
 title= 'Kategori Prestasi')
@@ -149,7 +157,7 @@ with col1:
             st.subheader("Ormawa Eksekutif PKU IPB Kabinet Gantari Arti")   
 with col2:
         # Tampilkan informasi nilai mutu
-             st.image('RISBANG X AKPRES.png', width=300)
+             st.image('RISBANG X INTERNAL.png', width=300)
 
 st.markdown('-------------') 
 st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan non-akademik mahasiswa PKU IPB, serta mengapresiasi prestasi yang telah mereka raih. Dengan adanya dashboard ini, diharapkan dapat memberikan informasi terkait perkembangan prestasi mahasiswa secara real-time, sehingga dapat memberikan motivasi dan inspirasi dalam mengejar prestasi lebih baik.")
@@ -193,6 +201,7 @@ left_column, Right_Column = st.columns([4,4])
 left_column.plotly_chart(fig1, use_container_width=True)
 Right_Column.plotly_chart(fig3,use_container_width=True)
 
+st.dataframe(dfh)
 # st.markdown('-------------')
 # st.plotly_chart(fig1)
 # st.markdown('-------------')
