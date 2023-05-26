@@ -163,7 +163,7 @@ with col2:
              st.image('RISBANG X INTERNAL.png', width=300)
 
 st.markdown('-------------') 
-st.write("Dashboard Prestasi Mahasiswa PKU IPB ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan nonakademik Mahasiswa PKU IPB serta mengapresiasi prestasi yang telah diraih. Dengan adanya dashboard ini, diharapkan dapat memberikan informasi terkait perkembangan prestasi mahasiswa sehingga dapat memberikan motivasi dan inspirasi dalam mengejar prestasi lebih baik.
+st.write("Dashboard Prestasi Mahasiswa PKU IPB ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan nonakademik Mahasiswa PKU IPB serta mengapresiasi prestasi yang telah diraih. Dengan adanya dashboard ini, diharapkan dapat memberikan informasi terkait perkembangan prestasi mahasiswa sehingga dapat memberikan motivasi dan inspirasi dalam mengejar prestasi lebih baik.")
 #=============================== Skala Lomba ===========================================
 st.markdown('-------------')   
 st.subheader('Metriks Prestasi Mahasiswa PKU IPB Angkatan 59')
