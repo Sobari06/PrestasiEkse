@@ -204,33 +204,6 @@ left_column, Right_Column = st.columns([4,4])
 left_column.plotly_chart(fig1, use_container_width=True)
 Right_Column.plotly_chart(fig3,use_container_width=True)
 
-st.markdown('-------------')
-st.subheader('Dataframe Prestasi Mahasiswa PKU IPB Angkatan 59')
-st.write('Terdapat sistem filtrasi data yang bisa membantu anda untuk mencari data dengan lebih cepat')
-
-# Menambahkan filter
-filter_options = {
-    'Fakultas': dfh['Fakultas'].unique(),
-    'Jenis Prestasi': dfh['Jenis Prestasi'].unique(),
-    'Skala Lomba/Pertandingan': dfh['Skala Lomba/Pertandingan'].unique(),
-}
-
-selected_filters = {}
-
-for option, values in filter_options.items():
-    selected_filters[option] = st.multiselect(f"Pilih {option}", values)
-
-# Memfilter data berdasarkan filter yang dipilih
-filtered_df = dfh.copy()
-
-for option, selected_values in selected_filters.items():
-    if selected_values:
-        filtered_df = filtered_df[filtered_df[option].isin(selected_values)]
-
-# Menampilkan data yang terfilter
-st.write("Data Terfilter:")
-st.write(filtered_df)
-
 #=============================== Data Foto ===========================================
 
 Add = "Add.png"
@@ -414,6 +387,32 @@ elif selected_menu == "FEM":
     right_column.image(fag1, use_column_width=True)
     add.image(Add, use_column_width=True)
 
+st.markdown('-------------')
+st.subheader('Dataframe Prestasi Mahasiswa PKU IPB Angkatan 59')
+st.write('Terdapat sistem filtrasi data yang bisa membantu anda untuk mencari data dengan lebih cepat')
+
+# Menambahkan filter
+filter_options = {
+    'Fakultas': dfh['Fakultas'].unique(),
+    'Jenis Prestasi': dfh['Jenis Prestasi'].unique(),
+    'Skala Lomba/Pertandingan': dfh['Skala Lomba/Pertandingan'].unique(),
+}
+
+selected_filters = {}
+
+for option, values in filter_options.items():
+    selected_filters[option] = st.multiselect(f"Pilih {option}", values)
+
+# Memfilter data berdasarkan filter yang dipilih
+filtered_df = dfh.copy()
+
+for option, selected_values in selected_filters.items():
+    if selected_values:
+        filtered_df = filtered_df[filtered_df[option].isin(selected_values)]
+
+# Menampilkan data yang terfilter
+st.write("Data Terfilter:")
+st.write(filtered_df)
 
 
 
