@@ -127,8 +127,8 @@ dfh= pd.read_excel(
     io='PrestasiEkse.xlsx',
     engine='openpyxl',
     sheet_name='Table',
-    usecols=[1,2,3,4,5,6,7,8,9,10])
-
+    usecols=[1,2,3,4,5,6,7,8,9,10,11,12])
+dfh = dfh.set_index(pd.Index(range(1, len(dfh) + 1)))
 
 print(dfh)
 
@@ -232,27 +232,51 @@ st.write("Data Terfilter:")
 st.write(filtered_df)
 
 #=============================== Data Foto ===========================================
+
 Add = "Add.png"
 fag1 = "Syafira Tiara Pungkii.png"
-fag2 =""
-fag3=""
-fag4 =""
-fag5 =""
-fag6 =""
-fag7=""
-fag8 =""
-fag9 =""
-fag10 =""
-fag11 =""
-fag12 =""
-fag13 =""
-fag14 =""
-fag15 =""
-fag16 =""
-fag17 =""
-fag18 =""
-fag19 =""
-fag20 =""
+
+#=============================== FAPERTA ===========================================
+fagA1 =""
+fagA2=""
+fagA3 =""
+#=============================== SKHB ===========================================
+fagB1 =""
+#=============================== FPIK ===========================================
+fagC1 =""
+fagC2=""
+fagC3 =""
+#=============================== FAPET ===========================================
+
+fagD1 =""
+#=============================== FAHUTAN ===========================================
+fagE1 ="Syafira Tiara Pungkii.png"
+fagE2 ="Syafira Tiara Pungkii.png"
+fagE3 ="Syafira Tiara Pungkii.png"
+fagE4 ="Syafira Tiara Pungkii.png"
+
+#=============================== FATETA ===========================================
+fagF1 =""
+#=============================== FMIPA ===========================================
+fagG1 =""
+fagG2 =""
+fagG3 =""
+fagG4 =""
+fagG5 =""
+fagG6 =""
+fagG7 =""
+#=============================== FEMA ===========================================
+fagH1 =""
+fagH2 =""
+fagH3 =""
+fagH4 =""
+fagH5 =""
+fagH6 =""
+fagH7 =""
+
+#=============================== FEM ===========================================
+fagI1 =""
+#=============================== SKHB ===========================================
 fag21 =""
 fag22 =""
 fag23 =""
@@ -261,50 +285,134 @@ fag25 =""
 fag26 =""
 fag27 =""
 
+# Membuat FIltrasi menggunakan Selectbox
 
-#=============================== Februari ===========================================
-st.markdown('-------------')
-st.subheader('Prestasi Mahasiswa PKU IPB Angkatan 59 Bulan Februari')
-left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
-left_column.image(fag1, use_column_width=True)
-middle_column.image(fag1, use_column_width=True)
-right_column.image(fag1, use_column_width=True)
-add.image(fag1, use_column_width=True)
+st.subheader("Filtrasi Prestasi Mahasiswa FAPERTA PKU IPB Angkatan 59 Berdasarkan Fakultas")
+menu = ["FAPERTA","SKHB", "FPIK","FAPET","FAHUTAN","FATETA","FMIPA", "FEM", "FEMA","SB" ]
+selected_menu = st.selectbox("Fakultas", menu) 
 
-#=============================== Maret ===========================================
-st.markdown('-------------')
-st.subheader('Prestasi Mahasiswa PKU IPB Angkatan 59 Bulan Maret')
 
-left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
-left_column.image(fag1, use_column_width=True)
-middle_column.image(fag1, use_column_width=True)
-right_column.image(fag1, use_column_width=True)
-add.image(fag1, use_column_width=True)
-#=============================== Mei ===========================================
-st.markdown('-------------')
-st.subheader('Prestasi Mahasiswa PKU IPB Angkatan 59 Bulan Mei')
+if selected_menu == "FAPERTA":
 
-left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
-left_column.image(fag1, use_column_width=True)
-middle_column.image(fag1, use_column_width=True)
-right_column.image(fag1, use_column_width=True)
-add.image(fag1, use_column_width=True)
+#=============================== FAPERTA ===========================================
+    st.markdown('-------------')
+    st.subheader('Prestasi Mahasiswa FAPERTA PKU IPB Angkatan 59')
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fag1, use_column_width=True)
+    middle_column.image(fag1, use_column_width=True)
+    right_column.image(fag1, use_column_width=True)
+    add.image(Add, use_column_width=True)
 
-left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
-left_column.image(fag1, use_column_width=True)
-middle_column.image(fag1, use_column_width=True)
-right_column.image(fag1, use_column_width=True)
-add.image(Add, use_column_width=True)
+elif selected_menu == "FATETA":
+#=============================== FAPET ===========================================
+    st.markdown('-------------')
+    st.subheader('Prestasi Mahasiswa FATETA PKU IPB Angkatan 59')
 
-#=============================== Juni ===========================================
-st.markdown('-------------')
-st.subheader('Prestasi Mahasiswa PKU IPB Angkatan 59 Bulan Juni')
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(Add, use_column_width=True)
+    middle_column.image(Add, use_column_width=True)
+    right_column.image(Add, use_column_width=True)
+    add.image(Add, use_column_width=True)
 
-left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
-left_column.image(fag1, use_column_width=True)
-middle_column.image(fag1, use_column_width=True)
-right_column.image(fag1, use_column_width=True)
-add.image(fag1, use_column_width=True)
+elif selected_menu == "FPIK":
+
+#=============================== FPIK ===========================================
+    st.markdown('-------------')
+    st.subheader('Prestasi Mahasiswa FPIK PKU IPB Angkatan 59')
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fag1, use_column_width=True)
+    middle_column.image(fag1, use_column_width=True)
+    right_column.image(fag1, use_column_width=True)
+    add.image(Add, use_column_width=True)
+
+elif selected_menu == "FEMA":
+#=============================== FEMA ===========================================
+    st.markdown('-------------')
+    st.subheader('Prestasi Mahasiswa FEMA PKU IPB Angkatan 59')
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fag1, use_column_width=True)
+    middle_column.image(Add, use_column_width=True)
+    right_column.image(Add, use_column_width=True)
+    add.image(Add, use_column_width=True)
+
+elif selected_menu == "SKHB":
+#=============================== SKHB ===========================================
+    st.markdown('-------------')
+    st.subheader('Prestasi Mahasiswa SKHB PKU IPB Angkatan 59')
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fag1, use_column_width=True)
+    middle_column.image(Add, use_column_width=True)
+    right_column.image(Add, use_column_width=True)
+    add.image(Add, use_column_width=True)
+elif selected_menu == "FMIPA":
+#=============================== FMIPA ===========================================
+    st.markdown('-------------')
+    st.subheader('Prestasi Mahasiswa FMIPA PKU IPB Angkatan 59')
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fag1, use_column_width=True)
+    middle_column.image(fag1, use_column_width=True)
+    right_column.image(fag1, use_column_width=True)
+    add.image(fag1, use_column_width=True)
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fag1, use_column_width=True)
+    middle_column.image(fag1, use_column_width=True)
+    right_column.image(fag1, use_column_width=True)
+    add.image(Add, use_column_width=True)
+
+elif selected_menu == "SB":
+#=============================== SB ===========================================
+    st.markdown('-------------')
+    st.subheader('Prestasi Mahasiswa SB PKU IPB Angkatan 59')
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(Add, use_column_width=True)
+    middle_column.image(Add, use_column_width=True)
+    right_column.image(Add, use_column_width=True)
+    add.image(Add, use_column_width=True)
+
+elif selected_menu == "FAPET":
+#=============================== FAPET ===========================================
+    st.markdown('-------------')
+    st.subheader('Prestasi Mahasiswa FAPET PKU IPB Angkatan 59')
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fag1, use_column_width=True)
+    middle_column.image(Add, use_column_width=True)
+    right_column.image(Add, use_column_width=True)
+    add.image(Add, use_column_width=True)
+
+elif selected_menu == "FAHUTAN":
+#=============================== FAHUTAN ===========================================
+    st.markdown('-------------')
+    st.subheader('Prestasi Mahasiswa FAHUTAN PKU IPB Angkatan 59')
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fag1, use_column_width=True)
+    middle_column.image(fag1, use_column_width=True)
+    right_column.image(fag1, use_column_width=True)
+    add.image(fag1, use_column_width=True)
+
+elif selected_menu == "FEM":
+#=============================== FEM ===========================================
+    st.markdown('-------------')
+    st.subheader('Prestasi Mahasiswa FEM PKU IPB Angkatan 59')
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fag1, use_column_width=True)
+    middle_column.image(fag1, use_column_width=True)
+    right_column.image(fag1, use_column_width=True)
+    add.image(fag1, use_column_width=True)
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fag1, use_column_width=True)
+    middle_column.image(fag1, use_column_width=True)
+    right_column.image(fag1, use_column_width=True)
+    add.image(Add, use_column_width=True)
 
 
 
