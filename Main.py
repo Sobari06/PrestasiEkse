@@ -127,7 +127,7 @@ dfh= pd.read_excel(
     io='PrestasiEkse.xlsx',
     engine='openpyxl',
     sheet_name='Table',
-    usecols=[1,2,3,4,5,6,7,8,9,10,11,12])
+    usecols=[1,2,3,4,5,6,7,8,9,10])
 
 
 print(dfh)
@@ -163,7 +163,7 @@ with col2:
              st.image('RISBANG X AKPRES.png', width=300)
 
 st.markdown('-------------') 
-st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan non-akademik mahasiswa PKU IPB, serta mengapresiasi prestasi yang telah mereka raih. Dengan adanya dashboard ini, diharapkan dapat memberikan informasi terkait perkembangan prestasi mahasiswa secara real-time, sehingga dapat memberikan motivasi dan inspirasi dalam mengejar prestasi lebih baik.")
+st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan non-akademik mahasiswa PKU IPB, serta mengapresiasi prestasi yang telah mereka raih. Dengan adanya dashboard ini, diharapkan dapat memberikan informasi terkait perkembangan prestasi mahasiswa, sehingga dapat memberikan motivasi dan inspirasi dalam mengejar prestasi lebih baik.")
 #=============================== Skala Lomba ===========================================
 st.markdown('-------------')   
 st.subheader('Metriks Prestasi Mahasiswa PKU IPB Angkatan 59')
