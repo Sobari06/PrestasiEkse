@@ -210,13 +210,13 @@ Add = "Add.png"
 fag1 = "Syafira Tiara Pungkii.png"
 
 #=============================== FAPERTA ===========================================
-fagA1 ="Irzi1(A).png"
+fagA1 ="IrziFinal(A).png"
 fagA2="Irzi2(A).png"
 fagA3 ="Diaz(A).png"
 #=============================== SKHB ===========================================
 fagB1 ="Nadelia(B).png"
 #=============================== FPIK ===========================================
-fagC1 ="Fahmi(C).png"
+fagC1 ="FahmiFinal(C).png"
 fagC2="Alfaroby(C).png"
 fagC3 ="Fahmi(C) (2).png"
 #=============================== FAPET ===========================================
@@ -231,20 +231,20 @@ fagE4 ="Achmad(E).png"
 #=============================== FATETA ===========================================
 fagF1 =""
 #=============================== FMIPA ===========================================
-fagG1 ="Ahmad1(G).png"
+fagG1 ="AhmadFinal(G).png"
 fagG2 ="Haidar(G) (2).png"
 fagG3 ="Haidar(G).png"
-fagG4 ="Rafi1(G).png"
+fagG4 ="RafiFinal(G).png"
 fagG5 ="Rafi2(G).png"
 fagG6 ="Rafi3(G).png"
 fagG7 ="Rafi4(G).png"
 #=============================== FEM ===========================================
-fagH1 ="Abdul(H).pg"
+fagH1 ="Abdul(H).png"
 fagH2 ="Hamidatul(H).png"
 fagH3 ="Regita(H).png"
-fagH4 ="Yuda1(H).png"
-fagH5 ="Yuda2(H).png"
-fagH6 ="Rifdah(H).png"
+fagH4 ="YudaFinal(H).png"
+fagH5 ="Rifdah(H).png"
+fagH6 = "Ali(H).png"
 fagH7 ="Ali(H).png"
 
 #=============================== FEMA ===========================================
@@ -272,12 +272,12 @@ if selected_menu == "FAPERTA":
     st.subheader('Prestasi Mahasiswa FAPERTA PKU IPB Angkatan 59')
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
     left_column.image(fagA1, use_column_width=True)
-    middle_column.image(fagA2, use_column_width=True)
-    right_column.image(fagA3, use_column_width=True)
+    middle_column.image(fagA3, use_column_width=True)
+    right_column.image(Add, use_column_width=True)
     add.image(Add, use_column_width=True)
 
 elif selected_menu == "FATETA":
-#=============================== FAPET ===========================================
+#=============================== FATETA ===========================================
     st.markdown('-------------')
     st.subheader('Prestasi Mahasiswa FATETA PKU IPB Angkatan 59')
 
@@ -296,7 +296,7 @@ elif selected_menu == "FPIK":
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
     left_column.image(fagC1, use_column_width=True)
     middle_column.image(fagC2, use_column_width=True)
-    right_column.image(fagC3, use_column_width=True)
+    right_column.image(Add, use_column_width=True)
     add.image(Add, use_column_width=True)
 
 elif selected_menu == "FEMA":
@@ -327,14 +327,14 @@ elif selected_menu == "FMIPA":
 
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
     left_column.image(fagG1, use_column_width=True)
-    middle_column.image(fagG2, use_column_width=True)
-    right_column.image(fagG3, use_column_width=True)
-    add.image(fagG4, use_column_width=True)
+    middle_column.image(fagG3, use_column_width=True)
+    right_column.image(fagG4, use_column_width=True)
+    add.image(Add, use_column_width=True)
 
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
-    left_column.image(fagG5, use_column_width=True)
-    middle_column.image(fagG6, use_column_width=True)
-    right_column.image(fagG7, use_column_width=True)
+    left_column.image(Add, use_column_width=True)
+    middle_column.image(Add, use_column_width=True)
+    right_column.image(Add, use_column_width=True)
     add.image(Add, use_column_width=True)
 
 elif selected_menu == "SB":
@@ -384,7 +384,7 @@ elif selected_menu == "FEM":
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
     left_column.image(fagH5, use_column_width=True)
     middle_column.image(fagH6, use_column_width=True)
-    right_column.image(fagH7, use_column_width=True)
+    right_column.image(Add, use_column_width=True)
     add.image(Add, use_column_width=True)
 
 st.markdown('-------------')
