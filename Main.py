@@ -160,10 +160,10 @@ with col1:
             st.subheader("Ormawa Eksekutif PKU IPB Kabinet Gantari Arti")   
 with col2:
         # Tampilkan informasi nilai mutu
-             st.image('RISBANG X INTERNAL.png', width=300)
+             st.image('RISBANG X AKPRES.png', width=300)
 
 st.markdown('-------------') 
-st.write("Dashboard Prestasi Mahasiswa PKU IPB ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan nonakademik Mahasiswa PKU IPB serta mengapresiasi prestasi yang telah diraih. Dengan adanya dashboard ini, diharapkan dapat memberikan informasi terkait perkembangan prestasi mahasiswa sehingga dapat memberikan motivasi dan inspirasi dalam mengejar prestasi lebih baik.")
+st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan non-akademik mahasiswa PKU IPB, serta mengapresiasi prestasi yang telah mereka raih. Dengan adanya dashboard ini, diharapkan dapat memberikan informasi terkait perkembangan prestasi mahasiswa secara real-time, sehingga dapat memberikan motivasi dan inspirasi dalam mengejar prestasi lebih baik.")
 #=============================== Skala Lomba ===========================================
 st.markdown('-------------')   
 st.subheader('Metriks Prestasi Mahasiswa PKU IPB Angkatan 59')
@@ -208,10 +208,6 @@ st.markdown('-------------')
 st.subheader('Dataframe Prestasi Mahasiswa PKU IPB Angkatan 59')
 st.write('Terdapat sistem filtrasi data yang bisa membantu anda untuk mencari data dengan lebih cepat')
 
-# Menampilkan data awal
-st.write("Data Awal:")
-st.write(dfh)
-
 # Menambahkan filter
 filter_options = {
     'Fakultas': dfh['Fakultas'].unique(),
@@ -235,49 +231,81 @@ for option, selected_values in selected_filters.items():
 st.write("Data Terfilter:")
 st.write(filtered_df)
 
-
-# data_asli = pd.DataFrame({
-#     'Variabel1': [1, 2, 3, 4, 5],
-#     'Variabel2': [10, 20, 30, 40, 50],
-#     'Variabel3': ['A', 'B', 'C', 'D', 'E'],
-#     'Variabel4': [True, False, True, True, False],
-#     'Variabel5': [0.1, 0.2, 0.3, 0.4, 0.5],
-#     'Variabel6': [100, 200, 300, 400, 500],
-#     'Variabel7': ['X', 'Y', 'Z', 'W', 'V'],
-#     'Variabel8': [True, False, False, True, True],
-#     'Variabel9': [0.01, 0.02, 0.03, 0.04, 0.05],
-#     'Variabel10': ['P', 'Q', 'R', 'S', 'T']
-# })
-
-# kolom_pilihan = ['Variabel1', 'Variabel2', 'Variabel3', 'Variabel4', 'Variabel5']
-# # Tambahkan judul aplikasi
-# st.title('Sistem Filtered Data')
-
-# # Tampilkan data asli
-# st.subheader('Data Asli')
-# st.dataframe(data_asli)
-
-# # Tambahkan sidebar untuk memilih variabel yang akan difilter
-# selected_kolom = st.sidebar.multiselect('Pilih Variabel', kolom_pilihan)
-
-# # Filter data berdasarkan variabel yang dipilih
-# filtered_data = data_asli[selected_kolom]
-
-# # Tampilkan data yang telah difilter
-# st.subheader('Data yang Difilter')
-# st.dataframe(filtered_data)
-
-# st.markdown('-------------')
-# st.plotly_chart(fig1)
-# st.markdown('-------------')
+#=============================== Data Foto ===========================================
+Add = "Add.png"
+fag1 = "Syafira Tiara Pungkii.png"
+fag2 =""
+fag3=""
+fag4 =""
+fag5 =""
+fag6 =""
+fag7=""
+fag8 =""
+fag9 =""
+fag10 =""
+fag11 =""
+fag12 =""
+fag13 =""
+fag14 =""
+fag15 =""
+fag16 =""
+fag17 =""
+fag18 =""
+fag19 =""
+fag20 =""
+fag21 =""
+fag22 =""
+fag23 =""
+fag24 =""
+fag25 =""
+fag26 =""
+fag27 =""
 
 
-# st.plotly_chart(fig3)
-# st.markdown('-------------')
+#=============================== Februari ===========================================
+st.markdown('-------------')
+st.subheader('Prestasi Mahasiswa PKU IPB Angkatan 59 Bulan Februari')
+left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+left_column.image(fag1, use_column_width=True)
+middle_column.image(fag1, use_column_width=True)
+right_column.image(fag1, use_column_width=True)
+add.image(fag1, use_column_width=True)
+
+#=============================== Maret ===========================================
+st.markdown('-------------')
+st.subheader('Prestasi Mahasiswa PKU IPB Angkatan 59 Bulan Maret')
+
+left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+left_column.image(fag1, use_column_width=True)
+middle_column.image(fag1, use_column_width=True)
+right_column.image(fag1, use_column_width=True)
+add.image(fag1, use_column_width=True)
+#=============================== Mei ===========================================
+st.markdown('-------------')
+st.subheader('Prestasi Mahasiswa PKU IPB Angkatan 59 Bulan Mei')
+
+left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+left_column.image(fag1, use_column_width=True)
+middle_column.image(fag1, use_column_width=True)
+right_column.image(fag1, use_column_width=True)
+add.image(fag1, use_column_width=True)
+
+left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+left_column.image(fag1, use_column_width=True)
+middle_column.image(fag1, use_column_width=True)
+right_column.image(fag1, use_column_width=True)
+add.image(Add, use_column_width=True)
+
+#=============================== Juni ===========================================
+st.markdown('-------------')
+st.subheader('Prestasi Mahasiswa PKU IPB Angkatan 59 Bulan Juni')
+
+left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+left_column.image(fag1, use_column_width=True)
+middle_column.image(fag1, use_column_width=True)
+right_column.image(fag1, use_column_width=True)
+add.image(fag1, use_column_width=True)
 
 
 
-#=============================== Skala Lomba ===========================================
-# st.plotly_chart(fig5)
-# st.markdown('-------------')
 
