@@ -130,6 +130,17 @@ dfh= pd.read_excel(
     usecols=[1,2,3,4,5,6,7,8,9,10,11,12])
 dfh = dfh.set_index(pd.Index(range(1, len(dfh) + 1)))
 
+
+
+# Mengubah kolom 12 menjadi tipe data datetime
+dfh['Waktu Pelaksanaan'] = pd.to_datetime(dfh['Waktu Pelaksanaan'])
+
+# Membuat fungsi untuk mengubah format tanggal
+def ubah_format_tanggal(date):
+    return date.strftime('%d-%B-%Y')
+
+# Mengaplikasikan fungsi pada kolom 12
+dfh['Waktu Pelaksanaan'] = dfh['Waktu Pelaksanaan'].apply(ubah_format_tanggal)
 print(dfh)
 
 
@@ -182,6 +193,7 @@ st.markdown('-------------')
 
 #=============================== Bulan ===========================================
 st.subheader('Line Chart Prestasi Mahasiswa PKU IPB Angkatan 59')
+st.write('Berikut adalah Line Chart terkait perkembangan jumlah prestasi yang diperoleh tiap bulannya.')
 st.plotly_chart(fig4)
 st.markdown('-------------')
 
@@ -211,14 +223,14 @@ fag1 = "Syafira Tiara Pungkii.png"
 
 #=============================== FAPERTA ===========================================
 fagA1 ="IrziFinal(A).png"
-fagA2="Irzi2(A).png"
+# fagA2="Irzi2(A).png"
 fagA3 ="Diaz(A).png"
 #=============================== SKHB ===========================================
 fagB1 ="Nadelia(B).png"
 #=============================== FPIK ===========================================
 fagC1 ="FahmiFinal(C).png"
 fagC2="Alfaroby(C).png"
-fagC3 ="Fahmi(C) (2).png"
+# fagC3 ="Fahmi(C) (2).png"
 #=============================== FAPET ===========================================
 
 fagD1 ="Taufiq(D).png"
@@ -232,12 +244,12 @@ fagE4 ="Achmad(E).png"
 fagF1 =""
 #=============================== FMIPA ===========================================
 fagG1 ="AhmadFinal(G).png"
-fagG2 ="Haidar(G) (2).png"
+# fagG2 ="Haidar(G) (2).png"
 fagG3 ="Haidar(G).png"
 fagG4 ="RafiFinal(G).png"
-fagG5 ="Rafi2(G).png"
-fagG6 ="Rafi3(G).png"
-fagG7 ="Rafi4(G).png"
+# fagG5 ="Rafi2(G).png"
+# fagG6 ="Rafi3(G).png"
+# fagG7 ="Rafi4(G).png"
 #=============================== FEM ===========================================
 fagH1 ="Abdul(H).png"
 fagH2 ="Hamidatul(H).png"
@@ -245,7 +257,7 @@ fagH3 ="Regita(H).png"
 fagH4 ="YudaFinal(H).png"
 fagH5 ="Rifdah(H).png"
 fagH6 = "Ali(H).png"
-fagH7 ="Ali(H).png"
+# fagH7 ="Ali(H).png"
 
 #=============================== FEMA ===========================================
 fagI1 ="Amrul(I).png"
@@ -260,7 +272,7 @@ fag27 =""
 
 # Membuat FIltrasi menggunakan Selectbox
 
-st.subheader("Filtrasi Prestasi Mahasiswa FAPERTA PKU IPB Angkatan 59 Berdasarkan Fakultas")
+st.subheader("Filtrasi Prestasi Mahasiswa PKU IPB Angkatan 59 Berdasarkan Fakultas")
 menu = ["FAPERTA","SKHB", "FPIK","FAPET","FAHUTAN","FATETA","FMIPA", "FEM", "FEMA","SB" ]
 selected_menu = st.selectbox("Fakultas", menu) 
 
