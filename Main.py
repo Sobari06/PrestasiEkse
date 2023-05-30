@@ -171,7 +171,7 @@ with col1:
             st.subheader("Ormawa Eksekutif PKU IPB Kabinet Gantari Arti")   
 with col2:
         # Tampilkan informasi nilai mutu
-             st.image('Risbang X Akpres1.png', width=300)
+             st.image('Risbang x Akpres1.png', width=300)
 
 st.markdown('-------------') 
 st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan non-akademik mahasiswa PKU IPB, serta mengapresiasi prestasi yang telah mereka raih. Dengan adanya dashboard ini, diharapkan dapat memberikan informasi terkait perkembangan prestasi mahasiswa, sehingga dapat memberikan motivasi dan inspirasi dalam mengejar prestasi lebih baik.")
