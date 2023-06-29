@@ -171,7 +171,7 @@ with col1:
             st.subheader("Ormawa Eksekutif PKU IPB Kabinet Gantari Arti")   
 with col2:
         # Tampilkan informasi nilai mutu
-             st.image('Risbang x Akpres1.png', width=300)
+             st.image('RISBANG X AKPRES.png', width=300)
 
 st.markdown('-------------') 
 st.write("Dashboard Prestasi Mahasiswa PKU IPB Angkatan 59 ini bertujuan untuk memberikan pemahaman yang lebih baik tentang pencapaian akademik dan non-akademik mahasiswa PKU IPB, serta mengapresiasi prestasi yang telah mereka raih. Dengan adanya dashboard ini, diharapkan dapat memberikan informasi terkait perkembangan prestasi mahasiswa, sehingga dapat memberikan motivasi dan inspirasi dalam mengejar prestasi lebih baik.")
@@ -182,13 +182,13 @@ st.write('Berikut adalah metriks terkait total prestasi yang diperoleh dan jumla
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.metric("Jumlah Prestasi", 27)
+    st.metric("Jumlah Prestasi", 36)
 with col2:
     st.metric("Internasional", 2)
 with col3:
-    st.metric("Nasional", 20)
+    st.metric("Nasional", 27)
 with col4:
-    st.metric("Regional", 5)
+    st.metric("Regional", 7)
 st.markdown('-------------')
 
 #=============================== Bulan ===========================================
@@ -223,7 +223,7 @@ fag1 = "Syafira Tiara Pungkii.png"
 
 #=============================== FAPERTA ===========================================
 fagA1 ="IrziFinal(A).png"
-# fagA2="Irzi2(A).png"
+fagA2="Vania(A).png"
 fagA3 ="Diaz(A).png"
 #=============================== SKHB ===========================================
 fagB1 ="Nadelia(B).png"
@@ -237,17 +237,18 @@ fagD1 ="Taufiq(D).png"
 #=============================== FAHUTAN ===========================================
 fagE1 ="Syafira Tiara Pungkii.png"
 fagE2 ="Akbar(E).png"
-fagE3 ="Aditya(E).png"
+fagE3 ="Aditya(E)#2.png"
 fagE4 ="Achmad(E).png"
+fagE5 ="Japar(E).png"
 
 #=============================== FATETA ===========================================
-fagF1 =""
+fagF1 ="Riechard(F).png"
 #=============================== FMIPA ===========================================
 fagG1 ="AhmadFinal(G).png"
-# fagG2 ="Haidar(G) (2).png"
+fagG2 ="Sultan(G).png"
 fagG3 ="Haidar(G).png"
 fagG4 ="RafiFinal(G).png"
-# fagG5 ="Rafi2(G).png"
+fagG5 ="Arina(G).png"
 # fagG6 ="Rafi3(G).png"
 # fagG7 ="Rafi4(G).png"
 #=============================== FEM ===========================================
@@ -256,7 +257,7 @@ fagH2 ="Hamidatul(H).png"
 fagH3 ="Regita(H).png"
 fagH4 ="YudaFinal(H).png"
 fagH5 ="Rifdah(H).png"
-fagH6 = "Ali(H).png"
+fagH6 = "Ali Akbar(H)#2.png"
 # fagH7 ="Ali(H).png"
 
 #=============================== FEMA ===========================================
@@ -285,7 +286,7 @@ if selected_menu == "FAPERTA":
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
     left_column.image(fagA1, use_column_width=True)
     middle_column.image(fagA3, use_column_width=True)
-    right_column.image(Add, use_column_width=True)
+    right_column.image(fagA2, use_column_width=True)
     add.image(Add, use_column_width=True)
 
 elif selected_menu == "FATETA":
@@ -294,7 +295,7 @@ elif selected_menu == "FATETA":
     st.subheader('Prestasi Mahasiswa FATETA PKU IPB Angkatan 59')
 
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
-    left_column.image(Add, use_column_width=True)
+    left_column.image(fagF1, use_column_width=True)
     middle_column.image(Add, use_column_width=True)
     right_column.image(Add, use_column_width=True)
     add.image(Add, use_column_width=True)
@@ -341,10 +342,10 @@ elif selected_menu == "FMIPA":
     left_column.image(fagG1, use_column_width=True)
     middle_column.image(fagG3, use_column_width=True)
     right_column.image(fagG4, use_column_width=True)
-    add.image(Add, use_column_width=True)
+    add.image(fagG2, use_column_width=True)
 
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
-    left_column.image(Add, use_column_width=True)
+    left_column.image(fagG5, use_column_width=True)
     middle_column.image(Add, use_column_width=True)
     right_column.image(Add, use_column_width=True)
     add.image(Add, use_column_width=True)
@@ -381,6 +382,12 @@ elif selected_menu == "FAHUTAN":
     middle_column.image(fagE2, use_column_width=True)
     right_column.image(fagE3, use_column_width=True)
     add.image(fagE4, use_column_width=True)
+
+    left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
+    left_column.image(fagE5, use_column_width=True)
+    middle_column.image(Add, use_column_width=True)
+    right_column.image(Add, use_column_width=True)
+    add.image(Add, use_column_width=True)
 
 elif selected_menu == "FEM":
 #=============================== FEM ===========================================
