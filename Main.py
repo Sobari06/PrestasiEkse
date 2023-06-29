@@ -182,13 +182,13 @@ st.write('Berikut adalah metriks terkait total prestasi yang diperoleh dan jumla
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.metric("Jumlah Prestasi", 36)
+    st.metric("Jumlah Prestasi", 44)
 with col2:
     st.metric("Internasional", 2)
 with col3:
-    st.metric("Nasional", 27)
+    st.metric("Nasional", 33)
 with col4:
-    st.metric("Regional", 7)
+    st.metric("Regional", 9)
 st.markdown('-------------')
 
 #=============================== Bulan ===========================================
@@ -223,7 +223,7 @@ fag1 = "Syafira Tiara Pungkii.png"
 
 #=============================== FAPERTA ===========================================
 fagA1 ="IrziFinal(A).png"
-fagA2="Vania(A).png"
+fagA2="Vania(A)Edit.png"
 fagA3 ="Diaz(A).png"
 #=============================== SKHB ===========================================
 fagB1 ="Nadelia(B).png"
@@ -234,6 +234,7 @@ fagC2="Alfaroby(C).png"
 #=============================== FAPET ===========================================
 
 fagD1 ="Taufiq(D).png"
+fagD2="Rustandi(D).png"
 #=============================== FAHUTAN ===========================================
 fagE1 ="Syafira Tiara Pungkii.png"
 fagE2 ="Akbar(E).png"
@@ -243,13 +244,14 @@ fagE5 ="Japar(E).png"
 
 #=============================== FATETA ===========================================
 fagF1 ="Riechard(F).png"
+fagF2 = "Safira(F).png"
 #=============================== FMIPA ===========================================
-fagG1 ="AhmadFinal(G).png"
+fagG1 ="AhmadFinal(G)#2.png"
 fagG2 ="Sultan(G).png"
 fagG3 ="Haidar(G).png"
 fagG4 ="RafiFinal(G).png"
 fagG5 ="Arina(G).png"
-# fagG6 ="Rafi3(G).png"
+fagG6 ="Raihan(G).png"
 # fagG7 ="Rafi4(G).png"
 #=============================== FEM ===========================================
 fagH1 ="Abdul(H).png"
@@ -257,7 +259,7 @@ fagH2 ="Hamidatul(H).png"
 fagH3 ="Regita(H).png"
 fagH4 ="YudaFinal(H).png"
 fagH5 ="Rifdah(H).png"
-fagH6 = "Ali Akbar(H)#2.png"
+fagH6 = "Ali Akbar(H)#3.png"
 # fagH7 ="Ali(H).png"
 
 #=============================== FEMA ===========================================
@@ -296,7 +298,7 @@ elif selected_menu == "FATETA":
 
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
     left_column.image(fagF1, use_column_width=True)
-    middle_column.image(Add, use_column_width=True)
+    middle_column.image(fagF2, use_column_width=True)
     right_column.image(Add, use_column_width=True)
     add.image(Add, use_column_width=True)
 
@@ -346,7 +348,7 @@ elif selected_menu == "FMIPA":
 
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
     left_column.image(fagG5, use_column_width=True)
-    middle_column.image(Add, use_column_width=True)
+    middle_column.image(fagG6, use_column_width=True)
     right_column.image(Add, use_column_width=True)
     add.image(Add, use_column_width=True)
 
@@ -368,7 +370,7 @@ elif selected_menu == "FAPET":
 
     left_column, middle_column, right_column, add= st.columns([4, 4, 4, 4])
     left_column.image(fagD1, use_column_width=True)
-    middle_column.image(Add, use_column_width=True)
+    middle_column.image(fagD2, use_column_width=True)
     right_column.image(Add, use_column_width=True)
     add.image(Add, use_column_width=True)
 
